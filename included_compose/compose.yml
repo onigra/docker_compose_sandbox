@@ -1,0 +1,10 @@
+include:
+  - ../compose.yml
+
+services:
+  echo2:
+    image: hashicorp/http-echo
+    ports:
+      - 8080:8080
+    command: ['-listen', ':8080', '-text', 'service:echo port:8080']
+

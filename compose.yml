@@ -3,5 +3,5 @@ services:
     image: hashicorp/http-echo
     ports:
       - 5678:5678
-
+    command: ['-text', 'service:echo port:5678']
 
