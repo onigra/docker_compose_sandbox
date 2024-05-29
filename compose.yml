@@ -1,0 +1,7 @@
+services:
+  echo1:
+    image: hashicorp/http-echo
+    ports:
+      - 5678:5678
+
+
